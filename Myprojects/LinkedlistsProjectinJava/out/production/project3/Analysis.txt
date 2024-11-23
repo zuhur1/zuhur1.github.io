@@ -1,0 +1,39 @@
+Analysis.txt
+
+Method: Boolean add (T element)
+ArrayList Runtime = O(n)
+Explanation = the function of add(t element) calls the growsArray method which has a time complexity of O(n), 
+and the rest of the add(element) method has a runtime of O(1) making O(n) the worst case runtime.
+
+Method: Boolean add (T element)
+LinkedList Runtime = O(n)
+Explanation = the function loops through the length of the list only once
+
+Method: T getMax()
+ArrayList Runtime = O(N) if array is not sorted, O(1) if the array isSorted
+Explanation = If the array is sorted (isSorted is true), the method simply returns the last element, 
+which is O(1) since accessing an element by index in an array has constant time complexity. If its not sorted (!isSorted)
+the method iterates through the array once to find the maximum element using the compareTo method. The loop runs in 
+linear time with respect to the size of the array. Therefore, the time complexity is O(n), where n is the size of the array.
+
+Method: T getMax()
+LinkedList Runtime = O(n)
+Explanation = loops through length of the list only once
+
+Method: intersect(List<T> otherList) 
+ArrayList Runtime =
+Explaination =
+
+Method: intersect(List<T> otherList) 
+LinkedList Runtime = O(n * m)
+Explaination = The reason is because the outer loop loops through this.list and the
+inner loop loops through other list
+
+Method: reverse() method
+ArrayList Runtime = O(N)
+Explaination = The runtime complexity of the reverse method is O(n). This is because the method uses a two-pointer 
+approach to swap elements from both ends.
+
+Method: reverse() method
+LinkedList Runtime = O(n)
+Explaination = it only loops through list once and calls isSortedhelp which has a runtime of O(n)
